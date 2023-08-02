@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 140px);
+  position: relative;
+  padding: 20px;
+}
+
+.contenido::before {
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: opacity(0.9);
+  background-size: cover;
+  background-image: url(./imagenes/flowers_yell.jpeg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  font-size: larger;
+  font-weight: 600;
+  padding-right: 30px;
+}
+
+header {
+  display: flex;
+  height: 90px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 25px;
+}
+
+table {
+  background-color: rgb(79, 79, 79);
+  text-align: left;
+  width: 85%;
+  border-collapse: collapse;
+  margin-bottom: 1.5%;
+}
+
+th,
+td {
+  border: solid 3px black;
+}
+
+th {
+  background-color: black;
+}
+
+tr:hover {
+  background-color: orange;
+}
+
+input,
+textarea {
+  border-radius: 9px;
+}
+.experiencia {
+  gap: 9px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 8px;
+  width: 15%;
+  margin-left: 3%;
+}
+
+.social {
+  height: 50px;
+  width: 50px;
+}
+
+.social-small {
+  width: 40px;
+  height: 40px;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+}
+
+.retrato {
+  height: 25%;
+  filter: opacity(0.9);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  margin-top: 2.5%;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
